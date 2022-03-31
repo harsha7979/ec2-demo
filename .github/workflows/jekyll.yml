@@ -14,5 +14,5 @@ jobs:
     - name: Uploading to ec2 deployment server
       run: rsync -zhrv ./* ubuntu@13.233.103.3:/home/ubuntu/test
       
-    - name: Uploading to s3 Deployment server
-      run: aws s3 cp index.html s3://github-demo-s3
+    #- name: Uploading to s3 Deployment server
+      #run: aws s3 cp index.html s3://github-demo-s3
